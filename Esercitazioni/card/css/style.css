@@ -1,0 +1,132 @@
+/* Centratura di tutti gli elementi*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+    font-family: sans-serif;
+}
+
+/* Card principale */
+.card-container {
+    background-color: whitesmoke;
+    border: 2px solid #333;
+    border-radius: 30px;
+    padding: 25px;
+    display: flex;
+    width: 800px;
+    gap: 25px;
+    box-shadow: 10px 10px 10px 5px #333;
+}
+
+/* Sezione di Sinistra */
+.left-section {
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 40px;
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+/* box largo viola */
+.large-box {
+    width: 165px;
+    height: 240px;
+    background-color: rgba(221, 160, 221, 0.54);
+    border: 2px solid purple;
+    border-radius: 30px;
+}
+
+.large-box:hover {
+    background-color: rgba(221, 160, 221, 0.934);
+}
+
+/* Container per le 2 card in verticale */
+.small-box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Grandezze box blue e box verde */
+.small-box-blue,
+.small-box-green {
+    width: 90px;
+    height: 112px;
+    border-radius: 20px;
+    border: 2px solid #333;
+}
+
+.small-box-blue {
+    background-color: rgba(0, 114, 254, 0.479);
+    border-color: #333;
+}
+
+.small-box-blue:hover {
+    background-color: rgba(0, 114, 254, 0.738);
+}
+
+.small-box-green {
+    background-color: rgba(15, 229, 37, 0.429);
+    border-color: #333;
+}
+
+.small-box-green:hover {
+    background-color: rgba(15, 229, 37, 0.752);
+}
+
+/* Sezione di destra */
+.right-section-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.right-section-container hr {
+    height: 2px;
+    background-color: #333;
+    width: 464px;
+
+    border: none;
+
+}
+
+.right-section-container h4 {
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+
+.right-section-container h5 {
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card1,
+.card2,
+.card3 {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    border: 2px solid #333;
+}
+
+.card4{
+    width: 120px;
+    height: 60px;
+    border-radius: 15px;
+    border: 2px solid #333;
+    margin-left: 90px;
+}
+

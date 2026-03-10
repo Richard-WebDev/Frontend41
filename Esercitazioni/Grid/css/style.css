@@ -1,0 +1,35 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CONTENITORE GLOBALE */
+.Global-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+}
+
+/* GRID */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+    width: 900px;
+    height: 400px;
+}
+
+/* CARD */
+.card {
+    border-radius: 15px;
+    background-color: cyan;
+}
+
+.card.card1 {
+    grid-row: span 2;
+}

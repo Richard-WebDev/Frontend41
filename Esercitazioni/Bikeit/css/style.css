@@ -1,0 +1,614 @@
+/* Reset base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* =========================
+   CONTENITORE DI PAGINA
+========================= */
+.page-container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    background-color: white;
+}
+
+/* =========================
+   Componenti Globali
+========================= */
+
+/* Linea Divisoria*/
+.divider {
+    width: 100%;
+    border: 1px solid rgba(153, 151, 151, 0.211);
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Colore dei link verdi */
+.green-link {
+    color: rgba(151, 225, 40, 0.831);
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero-container {
+    text-align: left;
+    background-color: white;
+    padding-bottom: 140px;
+}
+
+
+.hero-text h1 {
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.84);
+
+    padding-bottom: 15px;
+}
+
+
+.hero-text p {
+    font-size: 16px;
+    line-height: 25px;
+
+    color: rgba(96, 96, 96, 0.848);
+}
+
+
+
+/* La sezione a destra della hero viene nascosta su Smartphone */
+.hero-image {
+    display: none;
+}
+
+
+/* =========================
+   ABOUT section
+========================= */
+.about-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-text {
+    padding-bottom: 55px;
+}
+
+
+.about-text h2 {
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.84);
+    padding-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.609);
+}
+
+.about-text a {
+    color: rgba(135, 204, 30, 0.748);
+}
+
+.about-list {
+    /* Reset stile lista */
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.about-list li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    text-align: left;
+
+    color: rgba(0, 0, 0, 0.84);
+    font-size: 22px;
+    font-weight: 600;
+
+    width: 100%;
+    height: 80px;
+    padding: 20px;
+
+    border: 1px solid rgba(85, 82, 82, 0.306);
+    border-radius: 15px;
+}
+
+/* =========================
+   HOW IT WORKS section
+========================= */
+.how-it-works_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Titolo */
+.how-it-works_container h2 {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.84);
+    font-size: 30px;
+    padding-bottom: 60px;
+}
+
+.step-card {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.step-number {
+    z-index: -1;
+    font-size: 40px;
+    color: rgba(173, 157, 157, 0.303);
+}
+
+.step-card img {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    bottom: 20px;
+}
+
+
+.step-card h3 {
+    padding-bottom: 10px;
+}
+
+.step-card p {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/* =========================
+   GUIDE section
+========================= */
+.guide_container {
+    width: auto;
+}
+
+
+.guide-card {
+    width: 300px;
+    height: auto;
+
+    /* Gestisce l'overflow delle card */
+    flex-shrink: 0;
+}
+
+/* Contenitore che gestice Overflow tramite scroll orizzontale */
+.card-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+    /* Spazio tra le card */
+    gap: 50px;
+}
+
+.guide_container h2 {
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.84);
+    padding-bottom: 30px;
+}
+
+.guide-header a {
+    display: inline-block;
+    color: rgba(135, 204, 30, 0.748);
+    font-size: 18px;
+    padding-bottom: 35px;
+}
+
+.guide-link a {
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.761);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.guide-link time {
+    display: inline-block;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.623);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.guide-text p {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+/* =========================
+   BRAND section
+========================= */
+.brand-logo_container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+}
+
+.brand-logo_container a {
+    flex-shrink: 0;
+    width: 120px;
+}
+
+
+
+/* =========================
+   REVIEWS SECTION
+========================= */
+
+.reviews_container {
+    display: flex;
+    align-items: flex-start;
+    overflow-x: auto;
+
+    gap: 40px;
+}
+
+.reviews-card {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+
+    width: 240px;
+    height: auto;
+
+    font-size: 15px;
+
+    border: 1px solid rgba(44, 43, 43, 0.124);
+    border-radius: 10px;
+
+    padding: 10px;
+    line-height: 25px;
+
+    text-align: left;
+}
+
+.reviews-card p {
+    color: rgba(0, 0, 0, 0.691);
+}
+
+.stars-card img {
+    width: 18px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/* =========================
+RESPONSIVE - Tablet piccoli
+========================= */
+
+@media (min-width: 768px) {
+
+    /* HERO */
+    .hero-text p {
+        font-size: 17px;
+    }
+
+    /* ABOUT */
+    .about-text h2 {
+        font-size: 40px;
+    }
+
+    /* HOW IT WORKS */
+    .step-card h3 {
+        font-size: 22px;
+    }
+
+    .step-card p {
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+    /* GUIDE */
+    .guide-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .guide-header h2 {
+        font-size: 40px;
+    }
+
+    .guide-header a {
+        padding-top: 20px;
+        font-size: 18px;
+    }
+
+    /* BRAND*/
+    .brand-logo_container {
+        gap: 5px;
+        justify-content: center;
+        overflow-x: visible;
+    }
+
+    /* REVIEWS */
+    .reviews_container {
+        display: flex;
+        overflow-x: visible;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .reviews-card {
+        width: 222px;
+    }
+}
+
+/* =========================
+RESPONSIVE - Tablet da 11 pollici
+========================= */
+
+@media (min-width: 834px) {
+
+    /* HERO */
+    .hero-text h1 {
+        font-size: 39px;
+    }
+
+
+    /* ABOUT */
+    .about-text h2 {
+        font-size: 42px;
+    }
+
+    .about-list li {
+        font-size: 25px;
+    }
+
+
+    /* HOW IT WORKS */
+    .how-it-works_container h2 {
+        font-size: 35px;
+    }
+
+    /* BRAND*/
+    .brand-logo_container {
+        gap: 15px;
+        overflow-x: visible;
+        justify-content: center;
+    }
+
+    /* REVIEWS */
+    .reviews-card {
+        width: 244px;
+    }
+}
+
+
+/* =========================
+RESPONSIVE - Tablet grandi da 12.9 pollici
+========================= */
+
+@media (min-width: 1024px) {
+
+    /* HERO */
+    .hero-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+    }
+
+    /* Fa comparire l'immagine a destra della hero */
+    .hero-image {
+        display: block;
+    }
+
+    /* Larghezza immagine */
+    .hero-image img {
+        width: 500px;
+    }
+
+    .hero-text h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .hero-text p {
+        font-size: 19px;
+    }
+
+    /* ABOUT */
+    .about-container {
+        flex-direction: row;
+        gap: 70px;
+    }
+
+    .about-text {
+        flex: 1;
+        text-align: left;
+    }
+
+    .about-list {
+        flex: 1;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-list li {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+    }
+
+    /* HOW IT WORKS */
+    .how-it-works_container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+
+        margin: 0 auto;
+    }
+
+    .how-it-works_container h2 {
+        /* Diciamo al titolo di occupare tutta la prima riga da solo */
+        grid-column: 1 / -1;
+        padding-bottom: 10px;
+    }
+
+    .step-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .step-icon_wrapper {
+        position: relative;
+        height: 70px;
+    }
+
+    /* numero in background */
+    .step-number {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        /* Grandezza Numero */
+        font-size: 110px;
+        font-weight: bold;
+        color: #f2f2f2;
+        line-height: 0.75;
+
+        z-index: 1;
+    }
+
+    /* Icona in primo piano */
+    .step-card img {
+        position: absolute;
+        top: 20px;
+        left: 25px;
+
+        height: 80px;
+        width: auto;
+
+        z-index: 2;
+    }
+
+    /* GUIDE */
+    .card-container {
+        overflow-x: visible;
+        gap: 20px;
+    }
+
+    .guide-card {
+        width: 220px;
+    }
+
+    /* REVIEWS */
+    .reviews-card {
+        width: 226px;
+    }
+}
+
+
+/* =========================
+RESPONSIVE - Laptop 13/14
+========================= */
+
+@media (min-width: 1382px) {
+
+    /* PAGE CONTAINER */
+    .page-container {
+        padding-left: 250px;
+        padding-right: 250px;
+    }
+
+    /* HERO*/
+    .hero-text h1 {
+        font-size: 50px;
+    }
+
+    .hero-text p {
+        font-size: 17px;
+    }
+
+    .hero-image img {
+        width: 380px;
+    }
+
+
+    /* ABOUT */
+    .about-text h2 {
+        font-size: 27px;
+    }
+
+    .about-text p {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    .about-list li {
+        font-size: 18px;
+    }
+
+
+    /* HOW IT WORKS */
+    .how-it-works_container h2 {
+        font-size: 27px;
+    }
+
+    /* numero in background */
+    .step-number {
+
+        /* Grandezza Numero */
+        font-size: 50px;
+    }
+
+    /* Icona in primo piano */
+    .step-card img {
+        height: 50px;
+    }
+
+    .step-content h3 {
+        font-size: 15px;
+    }
+
+    /* GUIDE */
+    .guide-card {
+        width: 200px;
+    }
+
+    .guide-header h2 {
+        font-size: 28px;
+    }
+
+    /* BRAND*/
+    .brand-logo_container a {
+        width: 80px;
+    }
+
+    /* REVIEWS */
+    .reviews-card {
+        width: 197px;
+    }
+}

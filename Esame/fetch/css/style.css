@@ -1,0 +1,44 @@
+/* Reset base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NavBar */
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+
+    background: #222;
+    color: white;
+}
+
+.Main-Content {
+    padding: 30px;
+}
+
+.Grid-Container {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 20px;
+}
+
+.square {
+    width: 100%;
+
+    aspect-ratio: 1/1;
+
+    background: #ddd;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+/* colore che verrà aggiunto con JS */
+.special-color {
+    background: blue;
+}

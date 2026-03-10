@@ -1,0 +1,192 @@
+/* --- RESET --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fdfdfd;
+}
+
+/* --- NAVBAR --- */
+.Navbar {
+    background-color: #c2185b;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 30px;
+
+    color: white;
+
+    /* Permette alla NavBar di seguirti dureante lo scroll */
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+    height: 65px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Logo della NavBar */
+.logo-img {
+    height: 35px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    transition: opacity 0.2s;
+}
+
+/* Rende i link leggermente trasparenti al passaggio del mouse */
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    border-radius: 20px;
+    border: none;
+    padding: 8px 15px;
+    width: 150px;
+
+    /* Rimuove il focus dal input quando è selezionato*/
+    outline: none;
+}
+
+.GhithubIcon{
+    margin-left: 10px;
+    height: 30px;
+}
+
+.GhithubIcon:hover {
+    opacity: 0.8;
+}
+
+
+
+/* --- HEADER FILTRI TEAM --- */
+.Team-Header {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-filter {
+    background: none;
+    border: none;
+
+    color: #c2185b;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.btn-filter:hover {
+    background-color: #c2185b;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Rimane evidenziato dopo il click */
+.btn-filter:focus {
+    background-color: #c2185b;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+/* --- MAIN GRID E CARD --- */
+.Main-Content {
+    max-width: 100%;
+    padding: 50px;
+}
+
+.Grid-Container {
+    display: grid;
+    /* Ogni colonna sarà grande 240px */
+    /*auto-fit dice al browser di inserire quante più colonne possibili nello spazio disponibile.*/
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.Card {
+    background-color: white;
+
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+
+    padding: 30px;
+    text-align: center;
+    
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.164);
+
+    /* Rende il passaggio con l'hover più morbido */
+    transition: transform 0.3s;
+}
+
+.Card:hover {
+    /* Alza di 4px le card */
+    transform: translateY(-4px);
+    
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.367);
+}
+
+.Card h4 {
+    margin-bottom: 25px;
+    color: #444;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.Avatar-Box {
+    display: flex;
+    justify-content: center;
+}
+
+.black {
+    background-color: black;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+}
+
+/* --- FOOTER --- */
+.Footer {
+    background-color: #c2185b;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.8;
+}

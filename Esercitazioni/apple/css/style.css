@@ -1,0 +1,136 @@
+/* Reset base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* Font simile a quello del sito di apple */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f7;
+}
+
+/* Page container */
+.page-container {
+    background-color: #f5f5f7;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* NAVBAR */
+.navbar {
+    height: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+}
+
+.nav-links {
+    position: relative;
+    top: 15px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /* Tolgo lo stile di default dalle liste */
+    list-style: none;
+}
+
+/* Stile links Nav */
+.nav-links a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Grandezza Icone NavBar */
+.apple,
+.magnifying-glass,
+.shop-bag {
+    height: 20px;
+    width: 20px;
+}
+
+/* HEADER */
+.Header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    top: 110px;
+    width: 100%;
+}
+
+.Header-container h1 {
+    font-size: 70px;
+    color: rgba(0, 0, 0, 0.868);
+    font-weight: 600;
+}
+
+.Header-container h2 {
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.896);
+    font-weight: 600;
+    word-spacing: 1px;
+}
+
+.btn-links {
+    display: flex;
+    gap: 30px;
+
+    position: relative;
+    top: 20px;
+}
+
+.btn-links a {
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Link sinistro */
+.left {
+    background-color: rgba(0, 106, 255, 0.84);
+    color: white;
+}
+
+.left:hover {
+    background-color: rgba(0, 106, 255, 0.789);
+
+}
+
+/* Link destro */
+.right {
+    color: rgba(0, 106, 255, 0.89);
+    border: 1px solid rgba(0, 106, 255, 0.84);
+}
+
+.right:hover {
+    background-color: rgba(0, 106, 255, 0.84);
+    color: whitesmoke;
+    border: 1px solid rgba(0, 106, 255, 0.84);
+}
+
+.hero-iphone {
+
+    /* Grandezza contenitore*/
+    width: 100%;
+    height: 580px;
+
+    /* Link estreno con riferimento all'immagine */
+    background-image: url("https://www.apple.com/v/home/cl/images/heroes/iphone-family/hero_iphone_family__fuz5j2v5xx6y_large_2x.jpg");
+
+    /* Grandezza immagine */
+    background-size: 5000px 800px;
+
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
